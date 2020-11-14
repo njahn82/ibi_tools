@@ -1,0 +1,21 @@
+Type: Compendium
+Package: ibi_rstudio_beispiel
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com")
+Description: R Notebook Analyse Worthäufigkeiten in Jane
+    Austen Romanen
+License: What license it uses
+Depends: 
+    dplyr,
+    ggplot2,
+    janeaustenr,
+    knitr,
+    rmarkdown,
+    tidytext
+Encoding: UTF-8
+LazyData: true
