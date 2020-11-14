@@ -1,11 +1,9 @@
 FROM rocker/binder:4.0.2
 LABEL maintainer='Najko Jahn'
-USER root
 COPY . ${HOME}
+USER root
 RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_USER}
-
-
 
 RUN wget https://github.com/njahn82/ibi_tools/raw/main/DESCRIPTION && R -e "options(repos = list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/2020-11-14/')); devtools::install_deps()"
 
